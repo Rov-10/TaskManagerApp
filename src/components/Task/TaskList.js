@@ -1,14 +1,14 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import Task from './Task';
+import'./TaskList.css'
 
-
-const TaskList = () => {
+const TaskList = ({groupId}) => {
     const tasks= useSelector(state => state.task.tasks)
     
     return (
-        <div>
-            {tasks.map(task=> <Task key={task.id} id={task.id} desc={task.desc}/>)}
+        <div className='TaskList'>
+            {tasks.map(task=> task.group === groupId ? <Task key={task.id} id={task.id} desc={task.desc}/>: '')}
         </div>
     );
 }

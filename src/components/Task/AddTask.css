@@ -1,0 +1,69 @@
+.AddTask{
+    display: flex;
+    flex-direction:row ;
+    width: 80%;
+    justify-content: space-between;
+    /* background-color: rgb(31, 31, 31);
+    padding-top: 10px;
+    border-radius: 0 0 25px 25px;
+    padding-bottom:20px ;
+    padding: 2%; */
+}
+.AddTask input{
+    color: white;
+    background-color: rgb(24, 24, 24) ;
+    border-radius: 10px;
+    border-color:rgb(87, 157, 255) ;
+    width: 90%;
+    /* height: 50px; */
+    /* flex-basis: 50%; */
+}
+.AddTaskBtns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 70%; */
+
+}
+
+.AddTaskBtns>span{
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.5s ease;
+}
+#btnN:hover{
+    color: lightgreen;
+
+}
+#btnx:hover{
+    color: lightcoral;
+}
+
+
+.CreateBtnTask{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color:rgb(87, 157, 255);
+    border-radius: 50px;
+    padding: 1%;
+    cursor: pointer;
+    text-align: center;
+    opacity: 0.5;
+    transition: 0.5s ease;
+    width:150px;
+}
+.CreateBtnTask:hover{
+    opacity: 1;
+}
+.CreateBtnTask span::before{
+    
+    content: "+   ";
+    /* font-size: 20px; */
+    font-weight: bolder;
+}
+.CreateBtnTask span{
+        white-space: nowrap;
+}

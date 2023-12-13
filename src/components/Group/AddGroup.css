@@ -1,0 +1,71 @@
+.AddGroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    height: 70px;
+    width: 200px;
+    background-color: black;
+    border-radius: 90px;
+
+}
+.AddGroup input{
+    background-color:rgb(24, 24, 24) ;
+    border-radius: 10px;
+    color: white;
+    border-color: rgb(87, 157, 255);
+    /* font-size: 14px; */
+    height: 50px;
+    width: 165px;
+    
+}
+.AddGroupBtns{
+    width: 84%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.AddGroupBtns>button{
+    background-color: rgb(87, 157, 255);
+    border-radius: 10px;
+    margin-top: 5%;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+.AddGroupBtns>span{
+    color: white;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.CreateBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    background-color: lightgray;
+    border-radius: 50px;
+    padding: 1%;
+    cursor: pointer;
+    height: 50px;
+    text-align: center;
+    opacity: 0.5;
+    transition: 0.5s ease;
+    width:200px;
+}
+.CreateBtn:hover{
+    opacity: 1;
+}
+.CreateBtn span::before{
+    
+    content: "+   ";
+    /* font-size: 20px; */
+    font-weight: bolder;
+}
+.CreateBtn span{
+        white-space: nowrap;
+}

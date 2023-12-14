@@ -13,6 +13,7 @@ const Group = ({desc, id}) => {
         tasksToDelete.map(task => task.group === desc ? dispatch(removeTask(task)): null);
     }
     
+    
     return (
         <div className='Group'>
             <div className='GroupHead'>

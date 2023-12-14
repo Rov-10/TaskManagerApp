@@ -25,7 +25,7 @@ export const taskSlice = createSlice({
             toStorage(state);
         },
         fromStorage: (state) => {
-            state.tasks = JSON.parse(localStorage.getItem("tasks"));
+            state.tasks = JSON.parse(localStorage.getItem("tasks")).tasks;
         }
     }
 

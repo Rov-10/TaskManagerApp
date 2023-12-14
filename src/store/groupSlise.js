@@ -23,7 +23,7 @@ export const groupSlice = createSlice({
                 toStorage(state);
             },
             fromStorage: (state) => {
-                state.groups = JSON.parse(localStorage.getItem("groups"));
+                state.groups = JSON.parse(localStorage.getItem("groups")).groups;
             }
         }
 
